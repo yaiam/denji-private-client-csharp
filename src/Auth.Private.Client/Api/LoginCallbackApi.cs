@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Net.Mime;
 using Auth.Private.Client.Client;
 using Auth.Private.Client.Model;
@@ -31,9 +32,8 @@ namespace Auth.Private.Client.Api
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackAcceptRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiApiPrivateLoginCallbackAcceptResponse</returns>
-        ApiApiPrivateLoginCallbackAcceptResponse ApiPrivateLoginCallbackAcceptPost(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), int operationIndex = 0);
+        ApiApiPrivateLoginCallbackAcceptResponse ApiPrivateLoginCallbackAcceptPost(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?));
 
         /// <summary>
         /// 
@@ -43,17 +43,15 @@ namespace Auth.Private.Client.Api
         /// </remarks>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackAcceptRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiApiPrivateLoginCallbackAcceptResponse</returns>
-        ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse> ApiPrivateLoginCallbackAcceptPostWithHttpInfo(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), int operationIndex = 0);
+        ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse> ApiPrivateLoginCallbackAcceptPostWithHttpInfo(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?));
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackRejectRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiApiPrivateLoginCallbackRejectResponse</returns>
-        ApiApiPrivateLoginCallbackRejectResponse ApiPrivateLoginCallbackRejectPost(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), int operationIndex = 0);
+        ApiApiPrivateLoginCallbackRejectResponse ApiPrivateLoginCallbackRejectPost(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?));
 
         /// <summary>
         /// 
@@ -63,9 +61,8 @@ namespace Auth.Private.Client.Api
         /// </remarks>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackRejectRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiApiPrivateLoginCallbackRejectResponse</returns>
-        ApiResponse<ApiApiPrivateLoginCallbackRejectResponse> ApiPrivateLoginCallbackRejectPostWithHttpInfo(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), int operationIndex = 0);
+        ApiResponse<ApiApiPrivateLoginCallbackRejectResponse> ApiPrivateLoginCallbackRejectPostWithHttpInfo(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?));
         #endregion Synchronous Operations
     }
 
@@ -83,10 +80,9 @@ namespace Auth.Private.Client.Api
         /// </remarks>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackAcceptRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiApiPrivateLoginCallbackAcceptResponse</returns>
-        System.Threading.Tasks.Task<ApiApiPrivateLoginCallbackAcceptResponse> ApiPrivateLoginCallbackAcceptPostAsync(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiApiPrivateLoginCallbackAcceptResponse> ApiPrivateLoginCallbackAcceptPostAsync(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -96,10 +92,9 @@ namespace Auth.Private.Client.Api
         /// </remarks>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackAcceptRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiApiPrivateLoginCallbackAcceptResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse>> ApiPrivateLoginCallbackAcceptPostWithHttpInfoAsync(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse>> ApiPrivateLoginCallbackAcceptPostWithHttpInfoAsync(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -108,10 +103,9 @@ namespace Auth.Private.Client.Api
         /// </remarks>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackRejectRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiApiPrivateLoginCallbackRejectResponse</returns>
-        System.Threading.Tasks.Task<ApiApiPrivateLoginCallbackRejectResponse> ApiPrivateLoginCallbackRejectPostAsync(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiApiPrivateLoginCallbackRejectResponse> ApiPrivateLoginCallbackRejectPostAsync(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -121,10 +115,9 @@ namespace Auth.Private.Client.Api
         /// </remarks>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackRejectRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiApiPrivateLoginCallbackRejectResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ApiApiPrivateLoginCallbackRejectResponse>> ApiPrivateLoginCallbackRejectPostWithHttpInfoAsync(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ApiApiPrivateLoginCallbackRejectResponse>> ApiPrivateLoginCallbackRejectPostWithHttpInfoAsync(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -139,12 +132,14 @@ namespace Auth.Private.Client.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class LoginCallbackApi : ILoginCallbackApi
+    public partial class LoginCallbackApi : IDisposable, ILoginCallbackApi
     {
         private Auth.Private.Client.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LoginCallbackApi"/> class.
+        /// **IMPORTANT** This will also create an instance of HttpClient, which is less than ideal.
+        /// It's better to reuse the <see href="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests#issues-with-the-original-httpclient-class-available-in-net">HttpClient and HttpClientHandler</see>.
         /// </summary>
         /// <returns></returns>
         public LoginCallbackApi() : this((string)null)
@@ -153,7 +148,11 @@ namespace Auth.Private.Client.Api
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LoginCallbackApi"/> class.
+        /// **IMPORTANT** This will also create an instance of HttpClient, which is less than ideal.
+        /// It's better to reuse the <see href="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests#issues-with-the-original-httpclient-class-available-in-net">HttpClient and HttpClientHandler</see>.
         /// </summary>
+        /// <param name="basePath">The target service's base path in URL format.</param>
+        /// <exception cref="ArgumentException"></exception>
         /// <returns></returns>
         public LoginCallbackApi(string basePath)
         {
@@ -161,16 +160,19 @@ namespace Auth.Private.Client.Api
                 Auth.Private.Client.Client.GlobalConfiguration.Instance,
                 new Auth.Private.Client.Client.Configuration { BasePath = basePath }
             );
-            this.Client = new Auth.Private.Client.Client.ApiClient(this.Configuration.BasePath);
-            this.AsynchronousClient = new Auth.Private.Client.Client.ApiClient(this.Configuration.BasePath);
+            this.ApiClient = new Auth.Private.Client.Client.ApiClient(this.Configuration.BasePath);
+            this.Client =  this.ApiClient;
+            this.AsynchronousClient = this.ApiClient;
             this.ExceptionFactory = Auth.Private.Client.Client.Configuration.DefaultExceptionFactory;
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="LoginCallbackApi"/> class
-        /// using Configuration object
+        /// Initializes a new instance of the <see cref="LoginCallbackApi"/> class using Configuration object.
+        /// **IMPORTANT** This will also create an instance of HttpClient, which is less than ideal.
+        /// It's better to reuse the <see href="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests#issues-with-the-original-httpclient-class-available-in-net">HttpClient and HttpClientHandler</see>.
         /// </summary>
-        /// <param name="configuration">An instance of Configuration</param>
+        /// <param name="configuration">An instance of Configuration.</param>
+        /// <exception cref="ArgumentNullException"></exception>
         /// <returns></returns>
         public LoginCallbackApi(Auth.Private.Client.Client.Configuration configuration)
         {
@@ -180,8 +182,78 @@ namespace Auth.Private.Client.Api
                 Auth.Private.Client.Client.GlobalConfiguration.Instance,
                 configuration
             );
-            this.Client = new Auth.Private.Client.Client.ApiClient(this.Configuration.BasePath);
-            this.AsynchronousClient = new Auth.Private.Client.Client.ApiClient(this.Configuration.BasePath);
+            this.ApiClient = new Auth.Private.Client.Client.ApiClient(this.Configuration.BasePath);
+            this.Client = this.ApiClient;
+            this.AsynchronousClient = this.ApiClient;
+            ExceptionFactory = Auth.Private.Client.Client.Configuration.DefaultExceptionFactory;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LoginCallbackApi"/> class.
+        /// </summary>
+        /// <param name="client">An instance of HttpClient.</param>
+        /// <param name="handler">An optional instance of HttpClientHandler that is used by HttpClient.</param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <returns></returns>
+        /// <remarks>
+        /// Some configuration settings will not be applied without passing an HttpClientHandler.
+        /// The features affected are: Setting and Retrieving Cookies, Client Certificates, Proxy settings.
+        /// </remarks>
+        public LoginCallbackApi(HttpClient client, HttpClientHandler handler = null) : this(client, (string)null, handler)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LoginCallbackApi"/> class.
+        /// </summary>
+        /// <param name="client">An instance of HttpClient.</param>
+        /// <param name="basePath">The target service's base path in URL format.</param>
+        /// <param name="handler">An optional instance of HttpClientHandler that is used by HttpClient.</param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentException"></exception>
+        /// <returns></returns>
+        /// <remarks>
+        /// Some configuration settings will not be applied without passing an HttpClientHandler.
+        /// The features affected are: Setting and Retrieving Cookies, Client Certificates, Proxy settings.
+        /// </remarks>
+        public LoginCallbackApi(HttpClient client, string basePath, HttpClientHandler handler = null)
+        {
+            if (client == null) throw new ArgumentNullException("client");
+
+            this.Configuration = Auth.Private.Client.Client.Configuration.MergeConfigurations(
+                Auth.Private.Client.Client.GlobalConfiguration.Instance,
+                new Auth.Private.Client.Client.Configuration { BasePath = basePath }
+            );
+            this.ApiClient = new Auth.Private.Client.Client.ApiClient(client, this.Configuration.BasePath, handler);
+            this.Client =  this.ApiClient;
+            this.AsynchronousClient = this.ApiClient;
+            this.ExceptionFactory = Auth.Private.Client.Client.Configuration.DefaultExceptionFactory;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LoginCallbackApi"/> class using Configuration object.
+        /// </summary>
+        /// <param name="client">An instance of HttpClient.</param>
+        /// <param name="configuration">An instance of Configuration.</param>
+        /// <param name="handler">An optional instance of HttpClientHandler that is used by HttpClient.</param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <returns></returns>
+        /// <remarks>
+        /// Some configuration settings will not be applied without passing an HttpClientHandler.
+        /// The features affected are: Setting and Retrieving Cookies, Client Certificates, Proxy settings.
+        /// </remarks>
+        public LoginCallbackApi(HttpClient client, Auth.Private.Client.Client.Configuration configuration, HttpClientHandler handler = null)
+        {
+            if (configuration == null) throw new ArgumentNullException("configuration");
+            if (client == null) throw new ArgumentNullException("client");
+
+            this.Configuration = Auth.Private.Client.Client.Configuration.MergeConfigurations(
+                Auth.Private.Client.Client.GlobalConfiguration.Instance,
+                configuration
+            );
+            this.ApiClient = new Auth.Private.Client.Client.ApiClient(client, this.Configuration.BasePath, handler);
+            this.Client = this.ApiClient;
+            this.AsynchronousClient = this.ApiClient;
             ExceptionFactory = Auth.Private.Client.Client.Configuration.DefaultExceptionFactory;
         }
 
@@ -192,6 +264,7 @@ namespace Auth.Private.Client.Api
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
+        /// <exception cref="ArgumentNullException"></exception>
         public LoginCallbackApi(Auth.Private.Client.Client.ISynchronousClient client, Auth.Private.Client.Client.IAsynchronousClient asyncClient, Auth.Private.Client.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
@@ -203,6 +276,19 @@ namespace Auth.Private.Client.Api
             this.Configuration = configuration;
             this.ExceptionFactory = Auth.Private.Client.Client.Configuration.DefaultExceptionFactory;
         }
+
+        /// <summary>
+        /// Disposes resources if they were created by us
+        /// </summary>
+        public void Dispose()
+        {
+            this.ApiClient?.Dispose();
+        }
+
+        /// <summary>
+        /// Holds the ApiClient if created
+        /// </summary>
+        public Auth.Private.Client.Client.ApiClient ApiClient { get; set; } = null;
 
         /// <summary>
         /// The client for accessing this underlying API asynchronously.
@@ -250,9 +336,8 @@ namespace Auth.Private.Client.Api
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackAcceptRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiApiPrivateLoginCallbackAcceptResponse</returns>
-        public ApiApiPrivateLoginCallbackAcceptResponse ApiPrivateLoginCallbackAcceptPost(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), int operationIndex = 0)
+        public ApiApiPrivateLoginCallbackAcceptResponse ApiPrivateLoginCallbackAcceptPost(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?))
         {
             Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse> localVarResponse = ApiPrivateLoginCallbackAcceptPostWithHttpInfo(apiApiPrivateLoginCallbackAcceptRequest);
             return localVarResponse.Data;
@@ -263,9 +348,8 @@ namespace Auth.Private.Client.Api
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackAcceptRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiApiPrivateLoginCallbackAcceptResponse</returns>
-        public Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse> ApiPrivateLoginCallbackAcceptPostWithHttpInfo(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), int operationIndex = 0)
+        public Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse> ApiPrivateLoginCallbackAcceptPostWithHttpInfo(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?))
         {
             Auth.Private.Client.Client.RequestOptions localVarRequestOptions = new Auth.Private.Client.Client.RequestOptions();
 
@@ -283,32 +367,21 @@ namespace Auth.Private.Client.Api
             };
 
             var localVarContentType = Auth.Private.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
 
             var localVarAccept = Auth.Private.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
             localVarRequestOptions.Data = apiApiPrivateLoginCallbackAcceptRequest;
-
-            localVarRequestOptions.Operation = "LoginCallbackApi.ApiPrivateLoginCallbackAcceptPost";
-            localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ApiApiPrivateLoginCallbackAcceptResponse>("/api/private/login/callback/accept", localVarRequestOptions, this.Configuration);
+
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("ApiPrivateLoginCallbackAcceptPost", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
+                if (_exception != null) throw _exception;
             }
 
             return localVarResponse;
@@ -319,12 +392,11 @@ namespace Auth.Private.Client.Api
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackAcceptRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiApiPrivateLoginCallbackAcceptResponse</returns>
-        public async System.Threading.Tasks.Task<ApiApiPrivateLoginCallbackAcceptResponse> ApiPrivateLoginCallbackAcceptPostAsync(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiApiPrivateLoginCallbackAcceptResponse> ApiPrivateLoginCallbackAcceptPostAsync(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse> localVarResponse = await ApiPrivateLoginCallbackAcceptPostWithHttpInfoAsync(apiApiPrivateLoginCallbackAcceptRequest, operationIndex, cancellationToken).ConfigureAwait(false);
+            Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse> localVarResponse = await ApiPrivateLoginCallbackAcceptPostWithHttpInfoAsync(apiApiPrivateLoginCallbackAcceptRequest, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -333,10 +405,9 @@ namespace Auth.Private.Client.Api
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackAcceptRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiApiPrivateLoginCallbackAcceptResponse)</returns>
-        public async System.Threading.Tasks.Task<Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse>> ApiPrivateLoginCallbackAcceptPostWithHttpInfoAsync(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackAcceptResponse>> ApiPrivateLoginCallbackAcceptPostWithHttpInfoAsync(ApiApiPrivateLoginCallbackAcceptRequest? apiApiPrivateLoginCallbackAcceptRequest = default(ApiApiPrivateLoginCallbackAcceptRequest?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Auth.Private.Client.Client.RequestOptions localVarRequestOptions = new Auth.Private.Client.Client.RequestOptions();
@@ -354,34 +425,24 @@ namespace Auth.Private.Client.Api
                 "text/json"
             };
 
+
             var localVarContentType = Auth.Private.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
 
             var localVarAccept = Auth.Private.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
             localVarRequestOptions.Data = apiApiPrivateLoginCallbackAcceptRequest;
 
-            localVarRequestOptions.Operation = "LoginCallbackApi.ApiPrivateLoginCallbackAcceptPost";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
 
             // make the HTTP request
+
             var localVarResponse = await this.AsynchronousClient.PostAsync<ApiApiPrivateLoginCallbackAcceptResponse>("/api/private/login/callback/accept", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("ApiPrivateLoginCallbackAcceptPost", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
+                if (_exception != null) throw _exception;
             }
 
             return localVarResponse;
@@ -392,9 +453,8 @@ namespace Auth.Private.Client.Api
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackRejectRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiApiPrivateLoginCallbackRejectResponse</returns>
-        public ApiApiPrivateLoginCallbackRejectResponse ApiPrivateLoginCallbackRejectPost(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), int operationIndex = 0)
+        public ApiApiPrivateLoginCallbackRejectResponse ApiPrivateLoginCallbackRejectPost(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?))
         {
             Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackRejectResponse> localVarResponse = ApiPrivateLoginCallbackRejectPostWithHttpInfo(apiApiPrivateLoginCallbackRejectRequest);
             return localVarResponse.Data;
@@ -405,9 +465,8 @@ namespace Auth.Private.Client.Api
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackRejectRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ApiApiPrivateLoginCallbackRejectResponse</returns>
-        public Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackRejectResponse> ApiPrivateLoginCallbackRejectPostWithHttpInfo(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), int operationIndex = 0)
+        public Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackRejectResponse> ApiPrivateLoginCallbackRejectPostWithHttpInfo(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?))
         {
             Auth.Private.Client.Client.RequestOptions localVarRequestOptions = new Auth.Private.Client.Client.RequestOptions();
 
@@ -425,32 +484,21 @@ namespace Auth.Private.Client.Api
             };
 
             var localVarContentType = Auth.Private.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
 
             var localVarAccept = Auth.Private.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
             localVarRequestOptions.Data = apiApiPrivateLoginCallbackRejectRequest;
-
-            localVarRequestOptions.Operation = "LoginCallbackApi.ApiPrivateLoginCallbackRejectPost";
-            localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ApiApiPrivateLoginCallbackRejectResponse>("/api/private/login/callback/reject", localVarRequestOptions, this.Configuration);
+
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("ApiPrivateLoginCallbackRejectPost", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
+                if (_exception != null) throw _exception;
             }
 
             return localVarResponse;
@@ -461,12 +509,11 @@ namespace Auth.Private.Client.Api
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackRejectRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiApiPrivateLoginCallbackRejectResponse</returns>
-        public async System.Threading.Tasks.Task<ApiApiPrivateLoginCallbackRejectResponse> ApiPrivateLoginCallbackRejectPostAsync(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ApiApiPrivateLoginCallbackRejectResponse> ApiPrivateLoginCallbackRejectPostAsync(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackRejectResponse> localVarResponse = await ApiPrivateLoginCallbackRejectPostWithHttpInfoAsync(apiApiPrivateLoginCallbackRejectRequest, operationIndex, cancellationToken).ConfigureAwait(false);
+            Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackRejectResponse> localVarResponse = await ApiPrivateLoginCallbackRejectPostWithHttpInfoAsync(apiApiPrivateLoginCallbackRejectRequest, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -475,10 +522,9 @@ namespace Auth.Private.Client.Api
         /// </summary>
         /// <exception cref="Auth.Private.Client.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="apiApiPrivateLoginCallbackRejectRequest"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ApiApiPrivateLoginCallbackRejectResponse)</returns>
-        public async System.Threading.Tasks.Task<Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackRejectResponse>> ApiPrivateLoginCallbackRejectPostWithHttpInfoAsync(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Auth.Private.Client.Client.ApiResponse<ApiApiPrivateLoginCallbackRejectResponse>> ApiPrivateLoginCallbackRejectPostWithHttpInfoAsync(ApiApiPrivateLoginCallbackRejectRequest? apiApiPrivateLoginCallbackRejectRequest = default(ApiApiPrivateLoginCallbackRejectRequest?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Auth.Private.Client.Client.RequestOptions localVarRequestOptions = new Auth.Private.Client.Client.RequestOptions();
@@ -496,34 +542,24 @@ namespace Auth.Private.Client.Api
                 "text/json"
             };
 
+
             var localVarContentType = Auth.Private.Client.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-            }
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
 
             var localVarAccept = Auth.Private.Client.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null)
-            {
-                localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-            }
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
             localVarRequestOptions.Data = apiApiPrivateLoginCallbackRejectRequest;
 
-            localVarRequestOptions.Operation = "LoginCallbackApi.ApiPrivateLoginCallbackRejectPost";
-            localVarRequestOptions.OperationIndex = operationIndex;
-
 
             // make the HTTP request
+
             var localVarResponse = await this.AsynchronousClient.PostAsync<ApiApiPrivateLoginCallbackRejectResponse>("/api/private/login/callback/reject", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("ApiPrivateLoginCallbackRejectPost", localVarResponse);
-                if (_exception != null)
-                {
-                    throw _exception;
-                }
+                if (_exception != null) throw _exception;
             }
 
             return localVarResponse;

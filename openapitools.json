@@ -10,7 +10,7 @@
         "generatorName": "csharp",
         "globalProperty": "apiTests=false,apiDocs=false,modelTests=false,modelDocs=false",
         "additionalProperties": {
-          "libarary": "httpclient",
+          "library": "httpclient",
           "targetFramework": "net7.0",
           "packageName": "Auth.Private.Client",
           "packageVersion": "1.0.0"

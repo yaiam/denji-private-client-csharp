@@ -21,6 +21,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
 using System.ComponentModel.DataAnnotations;
+using FileParameter = Auth.Private.Client.Client.FileParameter;
 using OpenAPIDateConverter = Auth.Private.Client.Client.OpenAPIDateConverter;
 
 namespace Auth.Private.Client.Model

@@ -7,8 +7,8 @@ src/Auth.Private.Client/Client/ApiResponse.cs
 src/Auth.Private.Client/Client/ClientUtils.cs
 src/Auth.Private.Client/Client/Configuration.cs
 src/Auth.Private.Client/Client/ExceptionFactory.cs
+src/Auth.Private.Client/Client/FileParameter.cs
 src/Auth.Private.Client/Client/GlobalConfiguration.cs
-src/Auth.Private.Client/Client/HttpMethod.cs
 src/Auth.Private.Client/Client/IApiAccessor.cs
 src/Auth.Private.Client/Client/IAsynchronousClient.cs
 src/Auth.Private.Client/Client/IReadableConfiguration.cs
@@ -17,6 +17,7 @@ src/Auth.Private.Client/Client/Multimap.cs
 src/Auth.Private.Client/Client/OpenAPIDateConverter.cs
 src/Auth.Private.Client/Client/RequestOptions.cs
 src/Auth.Private.Client/Client/RetryConfiguration.cs
+src/Auth.Private.Client/Client/WebRequestPathBuilder.cs
 src/Auth.Private.Client/Model/AbstractOpenAPISchema.cs
 src/Auth.Private.Client/Model/ApiApiPrivateLoginCallbackAcceptRequest.cs
 src/Auth.Private.Client/Model/ApiApiPrivateLoginCallbackAcceptResponse.cs
