@@ -5,7 +5,7 @@ set -e
 rm -rf ./.tmp
 rm -rf ./.openapi-generator
 rm -rf ./src
-rm -rf ./Org.OpenAPITools.sln
+rm -rf ./Kochnev.Auth.Private.Client.sln
 
 # clone auth
 mkdir ./.tmp
