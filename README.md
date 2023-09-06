@@ -1,6 +1,6 @@
 # Auth Private Client csharp
 
-## Build
+## Generate client
 ```
 ./build.sh
 ```
