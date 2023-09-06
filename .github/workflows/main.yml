@@ -19,6 +19,7 @@ jobs:
   push:
     name: Push
     runs-on: ubuntu-latest
+    needs: [ build ]
     steps:
       - name: Push
         run: dotnet nuget push ./dist/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
