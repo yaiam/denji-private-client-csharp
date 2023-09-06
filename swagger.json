@@ -1,0 +1,153 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Private API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/private/login/callback/accept": {
+      "post": {
+        "tags": [
+          "LoginCallback"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.AcceptRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.AcceptRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.AcceptRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.AcceptResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.AcceptResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.AcceptResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/private/login/callback/reject": {
+      "post": {
+        "tags": [
+          "LoginCallback"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.RejectRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.RejectRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.RejectRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.RejectResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.RejectResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Api.Api.Private.LoginCallback.RejectResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Api.Api.Private.LoginCallback.AcceptRequest": {
+        "type": "object",
+        "properties": {
+          "loginRequestId": {
+            "type": "string",
+            "nullable": true
+          },
+          "subjectId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Api.Api.Private.LoginCallback.AcceptResponse": {
+        "type": "object",
+        "properties": {
+          "loginResponseId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Api.Api.Private.LoginCallback.RejectRequest": {
+        "type": "object",
+        "properties": {
+          "loginRequestId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Api.Api.Private.LoginCallback.RejectResponse": {
+        "type": "object",
+        "properties": {
+          "loginResponseId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

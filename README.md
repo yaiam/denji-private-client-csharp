@@ -1,1 +1,0 @@
-# auth-private-client-csharp

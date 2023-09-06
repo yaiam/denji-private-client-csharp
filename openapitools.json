@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "7.0.0",
+    "generators": {
+      "csharp": {
+        "inputSpec": "swagger.json",
+        "output": ".",
+        "generatorName": "csharp",
+        "globalProperty": "apiTests=false,apiDocs=false,modelTests=false,modelDocs=false",
+        "additionalProperties": {
+          "libarary": "httpclient",
+          "targetFramework": "net7.0",
+          "packageName": "Auth.Private.Client",
+          "packageVersion": "1.0.0"
+        }
+      }
+    }
+  }
+}
