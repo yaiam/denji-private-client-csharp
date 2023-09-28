@@ -2,6 +2,8 @@
 
 ## Generate client
 ```
+dotnet tool restore
+npm i
 ./build.sh
 ```
 
